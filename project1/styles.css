@@ -1,0 +1,215 @@
+/* import buttons will be here */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+
+/* predefined tags */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+}
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+/* here the main section will be here */
+.header-section {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-image {
+  width: 150px;
+}
+
+.header-image img {
+  width: 100%;
+}
+
+.container {
+  margin-top: 35px;
+  /* align-content: center; */
+}
+
+/* .header-section div {
+  margin-right: 26px;
+} */
+
+.header-links ul li {
+  display: inline;
+  padding-right: 37px;
+}
+
+.header-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-button button {
+  background-color: #6b5af9;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  width: 177px;
+  height: 60px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-contactus {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-logo {
+  display: flex;
+  padding-bottom: 12px;
+}
+
+.telegram {
+  width: 17.78px;
+  margin: 0;
+  padding: 0;
+}
+
+.telegram img {
+  width: 100%;
+}
+
+.whatsapp {
+  width: 17.78px;
+  margin: 0;
+  padding: 0;
+}
+
+.whatsapp img {
+  width: 100%;
+}
+
+.phone-time p {
+  margin: 0;
+  padding: 0;
+}
+
+.header-contactus div {
+  margin-right: 12px;
+}
+
+.header-links {
+  /* margin-left: 34px; */
+}
+
+.left-header-sec {
+  display: flex;
+  align-items: center;
+}
+
+/* Phone number style */
+.phone-number span {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  color: #2a2367;
+}
+
+/* Timing style */
+.timings span {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #2a2367;
+}
+
+.header-links ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #2a2367;
+  font-weight: 700;
+  /* font-family: 'm'; */
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Product overview */
+
+.first-heading {
+  margin-top: 67px;
+}
+
+.first-heading h1 span {
+  color: #6b5af9;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading1-para {
+  margin-top: 33px;
+}
+
+.heading1-para p {
+  color: #2a2367;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.heading1-para p span {
+  color: #6b5af9;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.pr-2-sec {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+.pr-1-sec {
+  width: 653px;
+}
+
+.first-sec-btn {
+  margin-top: 116px;
+}
+
+.first-sec-btn button {
+  background-color: #6b5af9;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  width: 275px;
+  height: 60px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.para-content {
+  margin-top: 20px;
+  /* width: 472px; */
+}
+
+.para-content p {
+  font-weight: 600;
+  size: 12px;
+}
+
+.para-content p span {
+  color: #6b5af9;
+  font-weight: 700;
+}
