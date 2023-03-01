@@ -22,12 +22,23 @@ p {
   font-size: 18px;
 }
 
+/* Either use position sticky or if using absolute then also set top : 0px ,left : 0px ,right:0px */
+header {
+  position: sticky;
+  background: #ffffff;
+  top: 0px;
+  z-index: 9999999;
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
+}
+
 /* here the main section will be here */
 .header-section {
   display: flex;
   padding: 0px;
   align-items: center;
   justify-content: space-between;
+  padding-top: 20px;
+  background: #ffffff;
 }
 
 .header-image {
@@ -36,11 +47,6 @@ p {
 
 .header-image img {
   width: 100%;
-}
-
-.container {
-  margin-top: 35px;
-  /* align-content: center; */
 }
 
 /* .header-section div {
@@ -183,7 +189,7 @@ p {
 }
 
 .first-sec-btn {
-  margin-top: 116px;
+  margin-top: 75px;
 }
 
 .first-sec-btn button {
@@ -200,7 +206,7 @@ p {
 }
 
 .para-content {
-  margin-top: 20px;
+  margin-top: 42px;
   /* width: 472px; */
 }
 
@@ -212,4 +218,207 @@ p {
 .para-content p span {
   color: #6b5af9;
   font-weight: 700;
+}
+
+/* Card section */
+.card-section {
+  margin-top: 130px;
+}
+
+.card-section-heading h3 {
+  color: #2a2367;
+}
+
+.card-section-heading h3 span {
+  color: #6b5af9;
+}
+
+.card1-Number span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #ffffff;
+  text-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
+}
+.card1-heading {
+  position: relative;
+}
+.card1-heading::before {
+  content: " ";
+  position: absolute;
+  width: 50%;
+  border-bottom: 2px solid #e37575;
+  bottom: 0px;
+  top: 30px;
+}
+
+.card1-heading span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2a2367;
+}
+
+.card1-content {
+  margin-top: 20px;
+}
+
+.card1-content span p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card-grids-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  margin-top: 40px;
+}
+
+.card-1 {
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+}
+
+.card-section {
+  margin-top: 94px;
+}
+
+.card-section-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.card-section-btn button {
+  background-color: #6b5af9;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  width: 275px;
+  height: 60px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* feature section */
+
+.feature_section {
+  margin-top: 100px;
+}
+
+.feature-heading h3 span {
+  color: #6b5af9;
+}
+
+.features-section_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_heading span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6b5af9;
+  padding-left: 13px;
+}
+.mob_content_sec ul li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2a2367;
+}
+.content_heading {
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+/* for image */
+.mob_img_sec {
+  width: 522px;
+}
+.mob_img_sec img {
+  width: 100%;
+}
+/* feature section button */
+.featuresec_btn {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.featuresec_btn button {
+  background-color: #6b5af9;
+  border-radius: 5px;
+  border: none;
+  padding: 0px;
+  width: 275px;
+  height: 60px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Image Section */
+.image-main-sec {
+  margin-top: 112px;
+  background: #F0D577;
+  border-radius: 10px;
+  padding: 40px;
+}
+.image-main-sec-inner {
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-certi {
+  display: flex;
+}
+.certi-img img {
+  width: 100%;
+}
+.certi-img {
+  text-align: center;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.certi-one {
+  text-align: center;
+  width: 300px;
+}
+.certi-heading p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #9F9F9F;
+  margin: 0px;
+    padding: 0px;
+}
+
+.troffe-sec {
+  width: 360px;
+}
+.troffe-sec img {
+  width: 100%;
 }
