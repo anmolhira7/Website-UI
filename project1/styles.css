@@ -1,22 +1,62 @@
 /* import buttons will be here */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+/* side navigation */
+.sidenav
+{
+  height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s ease all;
+    padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  color: #2A2367;
+}
+.side-nav-cross a {
+  text-align: left;
+  color: #2A2367;
+  margin-top: 30px;
+  font-size: 52px;
+}
 /* predefined tags */
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 36px;
 }
+
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 36px;
 }
+
 h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
+
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -30,11 +70,17 @@ header {
   z-index: 9999999;
   box-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
 }
-
+.mbb-icon {
+  display: none;
+}
+.phone
+{
+  display: none;
+}
 /* here the main section will be here */
 .header-section {
   display: flex;
-  padding: 0px;
+  padding: 20px 0px 20px 0px;
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
@@ -152,6 +198,15 @@ header {
 
 /* Product overview */
 
+.img-container {
+  width: 600px;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+
 .first-heading {
   margin-top: 67px;
 }
@@ -171,6 +226,7 @@ header {
   font-size: 16px;
   font-weight: 400;
 }
+
 .heading1-para p span {
   color: #6b5af9;
   font-weight: 700;
@@ -180,8 +236,9 @@ header {
 .pr-2-sec {
   position: absolute;
   z-index: -1;
-  top: 0;
+  top: 143px;
   right: 0;
+  /* bottom: 0px; */
 }
 
 .pr-1-sec {
@@ -242,9 +299,11 @@ header {
   color: #ffffff;
   text-shadow: 0px 4px 8px rgb(0 0 0 / 25%);
 }
+
 .card1-heading {
   position: relative;
 }
+
 .card1-heading::before {
   content: " ";
   position: absolute;
@@ -335,6 +394,7 @@ header {
   color: #6b5af9;
   padding-left: 13px;
 }
+
 .mob_content_sec ul li {
   font-family: "Montserrat";
   font-style: normal;
@@ -343,6 +403,7 @@ header {
   line-height: 20px;
   color: #2a2367;
 }
+
 .content_heading {
   padding-bottom: 10px;
   padding-left: 15px;
@@ -352,9 +413,11 @@ header {
 .mob_img_sec {
   width: 522px;
 }
+
 .mob_img_sec img {
   width: 100%;
 }
+
 /* feature section button */
 .featuresec_btn {
   margin-top: 45px;
@@ -382,6 +445,7 @@ header {
   padding: 40px;
   position: relative;
 }
+
 .image-main-sec-inner {
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -390,23 +454,28 @@ header {
   align-items: center;
   justify-content: flex-end;
 }
+
 .main-certi {
   display: flex;
   margin-right: 40px;
 }
+
 .certi-img img {
   width: 100%;
 }
+
 .certi-img {
   text-align: center;
   width: 230px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .certi-one {
   text-align: center;
   width: 300px;
 }
+
 .certi-heading p {
   font-family: "Montserrat";
   font-style: normal;
@@ -437,6 +506,7 @@ header {
   /* text-align: center; */
   color: #2a2367;
 }
+
 .certi-heading {
   margin-bottom: 10px;
 }
@@ -481,26 +551,32 @@ header {
   line-height: 44px;
   color: #ffffff;
 }
+
 footer {
   margin-top: 60px;
   padding-bottom: 70px;
   background: #2a2367;
   color: #ffffff;
 }
+
 .footer-sec {
   padding-top: 80px;
 }
+
 .footer-heading {
   margin-bottom: 40px;
 }
+
 .footer-heading-two {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .footer-mail h1 {
   color: #6b5af9;
 }
+
 .footer-sec-one {
   padding-bottom: 20px;
   border-bottom: 0.5px solid #6b5af9;
@@ -589,4 +665,188 @@ footer {
   font-size: 12px;
   line-height: 40px;
   color: #ffffff;
+}
+
+/* media query responsive */
+@media (max-width:1024px) {
+  .header-links ul li {
+    padding-right: 19px;
+  }
+
+  .header-image {
+    width: 13%;
+  }
+
+  .header-contactus div {
+    margin-right: 7px;
+  }
+
+  .header-button button {
+    width: 144px;
+  }
+
+
+  /* Product overview first section */
+
+  .pr-1-sec {
+    width: 460px;
+  }
+
+  .img-container img {
+    width: 100%;
+  }
+
+  .para-content {
+    margin-top: 13px;
+    /* width: 472px; */
+  }
+
+  .para-content p {
+    font-size: 15px;
+  }
+
+  .first-sec-btn {
+    margin-top: 36px;
+  }
+
+  /* second section */
+  .card-section-heading h3 {
+    font-size: 30px;
+  }
+
+  .troffe-sec img {
+    width: 100%;
+  }
+
+  .troffe-sec {
+    position: absolute;
+    width: 31%;
+    left: 74px;
+    bottom: 24px;
+  }
+
+  .certi-img {
+    width: 205px;
+  }
+
+  .main-certi {
+    display: flex;
+    margin-right: -17px;
+  }
+
+  .certi-one {
+    text-align: center;
+    width: 247px;
+  }
+
+  .certi-img img {
+    width: 100%;
+  }
+
+  /* footer */
+  .footer-button button {
+    width: 311px;
+  }
+}
+
+@media (max-width:768px) {
+  .header-links {
+    display: none;
+}
+
+.img-container {
+  width: 442px;
+}
+
+.card-grids-6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-header-sec {
+  display: none;
+}
+.header-image {
+  width: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mbb-icon {
+  display: block;
+}
+.phone {
+  display: block;
+}
+
+/* First section */
+.pr-1-sec {
+  width: 100%;
+}
+
+.pr-2-sec {
+  position: absolute;
+}
+
+.first-heading {
+  margin-top: 25px;
+  /* width: 100%; */
+}
+
+.troffe-sec {
+  position: relative;
+  width: 31%;
+  left: 74px;
+  bottom: 24px;
+}
+
+.image-main-sec-inner {
+  flex-direction: column;
+}
+
+.main-certi {
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.troffe-sec {
+  position: relative;
+  margin-right: 26%;
+  width: 38%;
+}
+
+.certi-img {
+  width: 100%;
+}
+
+.certi-one {
+  text-align: center;
+  /* width: 247px; */
+}
+
+.footer-heading-two {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* grid section */
+.card-grids-6 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+/* feature section */
+.features-section_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mob_img_sec {
+  width: 100%;
+}
+
 }
